@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  nodeapi:
+    image: $DOCKERHUB/${CI_PROJECT_NAME}:$CI_PIPELINE_IID
+    ports:
+      - "3000:3000"
+    restart: always
